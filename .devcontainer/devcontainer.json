@@ -1,0 +1,16 @@
+{
+  "name": "pcap-traffic-studio",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "ms-python.mypy-type-checker"
+      ]
+    }
+  },
+  "postCreateCommand": "pip install -r requirements.txt"
+}
